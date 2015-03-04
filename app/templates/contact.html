@@ -1,0 +1,46 @@
+<!doctype html>
+
+
+<html>
+  <head>
+    <title>Lab3</title>
+  </head>
+  
+  <body>
+    
+    <form method="post" enctype="multipart/form-data" action="{{url_for('contact')}}">
+      <h2>CONTACT FORM</h2>
+      <br>
+      Please fill in this form to contact the site owners
+      <br><br>
+      Name:
+      <br>
+      Please Enter your full name
+      <br>
+      <input type="text" name="fname">
+      <br><br>
+      E-mail
+      <br>
+      Please Enter your email address
+      <br>
+      <input type="text" name = "femail">
+      <br><br>
+      Subject
+      <br>
+      <input type="text" name = "subject">
+      <br><br>
+      Message
+      <br><br>
+      Please enter the message you want to send
+      <br>
+      <input type="text" name = "msg">
+    <br><br> 
+      <input type="button" value="Submit">
+     
+    
+    </form>
+    
+  </body>
+  
+  
+</html>
