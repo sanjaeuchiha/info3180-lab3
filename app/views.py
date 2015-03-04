@@ -37,7 +37,8 @@ def sendemail(fromname2, fromemail2, fromsubject2, msg2):
                     toname,
                     toaddr,
                     subject,
-                    msg)        
+                    msg)   
+    print messagetosend
     username = 'sanjae_allen@hotmail.com'
     password ='esdhxyuvfvkietod'
     server = smtplib.SMTP('smtp.live.com:587')
@@ -57,7 +58,7 @@ def home():
   
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
-  if request.method  == "post":
+  if request.method  == "POST":
     sendemail(request.form['fname'], request.form['femail'], request.form['subject'], request.form['msg'])
   return render_template("contact.html")
 
